@@ -15,11 +15,11 @@
  */
 int main(void)
 {
-   CLed led(&PORTB, &DDRB, PINB1);
+   CLed led(&PORTB, &DDRB, PINB3);
 
    while(1)
    {
       led.toggle();
-      _delay_ms(500);
+      _delay_ms(50);
    }
 }

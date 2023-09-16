@@ -20,15 +20,16 @@ cmake_minimum_required(VERSION 2.8)
 # tools to beused for programming the AVR
 ##########################################################################
 set(AVR_UPLOADTOOL avrdude)
-set(AVR_PROGRAMMER avrispmkII)
+set(AVR_PROGRAMMER pickit4_isp)
 set(AVR_UPLOADTOOL_PORT usb)
+set(IPECMD_PATH "/Applications/microchip/mplabx/v6.15/mplab_platform/mplab_ipe/ipecmd.jar")
 
 ##########################################################################
 # AVR and fuses needs to be set
 ##########################################################################
-set(AVR_MCU atmega32)
-set(AVR_H_FUSE 0xd9)
-set(AVR_L_FUSE 0xc3)
+set(AVR_MCU attiny85)
+set(AVR_H_FUSE 0xDF)
+set(AVR_L_FUSE 0x62)
 
 ### END TOOLCHAIN SETUP AREA #############################################
 

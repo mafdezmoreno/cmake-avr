@@ -63,6 +63,8 @@ Temporary Items
 # CMake
 cmake-build-debug/
 cmake-build-release/
+build/
+*.swp
 
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
